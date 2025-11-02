@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtGPT - Whitney Digital Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div>
+                    <h1>🎨 ArtGPT</h1>
+                    <p class="subtitle">Whitney Museum Digital Assistant</p>
+                </div>
+                <div class="header-buttons">
+                    <button id="analyticsBtn" class="icon-btn" title="Analytics">📊</button>
+                    <button id="settingsBtn" class="icon-btn" title="Settings">⚙️</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Settings Panel -->
+        <div id="settingsPanel" class="panel hidden">
+            <h3>Experience Level</h3>
+            <div class="level-buttons">
+                <button class="level-btn" data-level="beginner">Beginner</button>
+                <button class="level-btn active" data-level="intermediate">Intermediate</button>
+                <button class="level-btn" data-level="advanced">Advanced</button>
+            </div>
+            <p class="level-description">Concise guidance with helpful tips and shortcuts</p>
+
+            <div class="api-section">
+                <button id="apiToggle" class="api-toggle">🔒 API Integration (Production Setup)</button>
+                <div id="apiContent" class="api-content hidden">
+                    <div class="security-notice">
+                        <h4>Security Best Practices</h4>
+                        <ul>
+                            <li><strong>Never store API keys in frontend code</strong></li>
+                            <li>Use environment variables on backend server</li>
+                            <li>Create a backend API endpoint that proxies requests</li>
+                            <li>Frontend calls your backend, backend calls OpenAI/Claude</li>
+                            <li>Use rate limiting to prevent abuse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analytics Panel -->
+        <div id="analyticsPanel" class="panel hidden">
+            <div class="analytics-header">
+                <h3>Usage Analytics</h3>
+                <button id="exportBtn" class="export-btn">📥 Export CSV</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalInteractions">0</div>
+                    <div class="stat-label">Total Interactions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="resolvedQueries">0</div>
+                    <div class="stat-label">Resolved Queries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="successRate">0%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+            <div class="category-stats">
+                <h4>Query Categories</h4>
+                <div id="categoryList"></div>
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chatArea">
+            <!-- Messages will be inserted here -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="messageInput" 
+                placeholder="Ask about Asana, Microsoft 365, or Whitney workflows... (typos OK!)"
+                autocomplete="off"
+            >
+            <button id="sendBtn" class="send-btn">Send ➤</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
