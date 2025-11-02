@@ -4,7 +4,9 @@ An intelligent, conversational AI assistant designed to support museum staff wit
 
 🌟 Project Overview:
 ArtGPT addresses a common challenge in creative workplaces: staff need quick answers to workflow questions without disrupting their work or waiting for IT support. This digital assistant provides instant, level-appropriate guidance for Microsoft 365, Asana project management, and museum-specific operations.
-✨ Key Features
+
+✨ Key Features:
+
 🤖 Smart Conversational Interface
 
 Natural language query processing with fuzzy matching algorithm
@@ -92,3 +94,26 @@ Exporting Analytics:
 Click Analytics (📊) button
 Review usage statistics
 Click "Export CSV" for detailed interaction logs
+
+🤝 Contributing
+This is a portfolio project, but feedback and suggestions are welcome!
+
+Fork the repository
+Create a feature branch (git checkout -b feature/improvement)
+Commit your changes (git commit -m 'Add some improvement')
+Push to the branch (git push origin feature/improvement)
+Open a Pull Request
+
+📝 Knowledge Base Structure
+The knowledge base is organized by category:
+
+asana: Project management workflows
+microsoft365: Office suite tools
+whitney: Museum-specific processes
+general: Help and meta information
+
+Each entry includes:
+
+Keywords array for matching
+Three response levels (beginner, intermediate, advanced)
+Common typo variations
