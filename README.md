@@ -1,6 +1,6 @@
-🎨 ArtGPT - Whitney Museum Digital Assistant
+🎨 ArtGPT - Digital Assistant
 
-An intelligent, conversational AI assistant designed to support museum staff with instant, contextual guidance for everyday workflows. Built as an MVP demonstrating learning experience design, conversational AI development, and user-centered support systems.
+An intelligent, conversational AI assistant designed to support staff with instant, contextual guidance for everyday workflows. Built as an MVP demonstrating learning experience design, conversational AI development, and user-centered support systems.
 
 🌟 Project Overview:
 ArtGPT addresses a common challenge in creative workplaces: staff need quick answers to workflow questions without disrupting their work or waiting for IT support. This digital assistant provides instant, level-appropriate guidance for Microsoft 365, Asana project management, and museum-specific operations.
